@@ -53,7 +53,7 @@ a:active {
     min-width: 10%
 }
 
-p.fount {
+.fount {
     font-family: MyFount, Arial, Helvetica, sans-serif;
     font-size: 1.5em;
 }
@@ -94,4 +94,36 @@ li {
     top: 0;
     left: 0;
     right: 0;
+}
+
+.fl p::first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+.cl div p::first-letter {
+    color: black
+}
+
+.change:hover::after {
+    font-family: MyFount, Arial, Helvetica, sans-serif;
+    content: attr(data-desc);
+    position: absolute;
+    left: 13%;
+    top: 1%;
+    color: red;
+}
+
+.change1:hover::after {
+    font-family: MyFount, Arial, Helvetica, sans-serif;
+    content: attr(data-descr);
+    position: absolute;
+    left: 13%;
+    top: 1%;
+    color: red;
+}
+
+h1 {
+    font-family: MyFount, Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }

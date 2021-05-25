@@ -24,7 +24,8 @@
         <div style="display: flex;">
             <a href="Index.html">
                 <img src="images\logo.jpg" alt="Logo" style="width: 50%" />
-            </a>Classmates
+            </a>
+            <h1>Classmates</h1>
         </div>
         <div style="display: flex;">
             <input type="search" onmousedown="event.cancelBubble = true;" ontouchstart="event.cancelBubble = true;" class="TopSearch__input" id="ts_input" autocomplete="off" name="disable-autofill" placeholder="Поиск" aria-label="Поиск">
@@ -50,7 +51,7 @@
             <div class="row">
                 <div class="col-3">
                     <img src=https://picsum.photos/200/300 alt="avatar" class="padb img-fluid" />
-                    <div class="padb d-md-flex ">
+                    <div class="padb d-md-flex change" data-desc="Change avatars" style="box-sizing: content-box;">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-outline-secondary butunsize" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Change avatar
@@ -65,7 +66,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <form method="POST" action="#">
-                                            <input type="file" name=avater; value="avatar" accept="image/jpeg,image/png,image/gif">
+                                            <input type="file" id="file" name=avater; value="avatar" accept="image/jpeg,image/png,image/gif">
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -77,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-descr="Edit   My Profile" class="change1">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-outline-secondary butunsize" data-bs-toggle="modal" data-bs-target="#staticBackdropedit">
                                     Edit
@@ -185,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="content" class="col-9">
+                <div id="content" class="col-9 fl">
 
                     <h4 style="line-height: 200%; text-align: center;"> MyHomework </h4>
                     <p class="fount"><b>Lorem psum dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Elit at imperdiet dui accumsan.
@@ -193,12 +194,12 @@
                         Id consectetur purus ut faucibus pulvinar elementum. Turpis nunc eget lorem dolor sed viverra ipsum. Eget nunc lobortis mattis aliquam faucibus purus in.
                     </p>
 
-                    <p><b>Turpis tincidunt</b> id aliquet risus feugiat in ante. Arcu odio ut sem nulla pharetra diam sit amet. Diam vulputate ut pharetra sit amet. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Eget gravida cum sociis
+                    <p class="cl"><b>Turpis tincidunt</b> id aliquet risus feugiat in ante. Arcu odio ut sem nulla pharetra diam sit amet. Diam vulputate ut pharetra sit amet. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Eget gravida cum sociis
                         natoque. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. A diam maecenas sed enim ut sem viverra aliquet eget. Nisl tincidunt eget nullam non nisi est sit amet. Rhoncus mattis rhoncus urna neque viverra justo
                         nec ultrices. In eu mi bibendum neque egestas. Id porta nibh venenatis cras sed felis eget velit aliquet. At tempor commodo ullamcorper a lacus vestibulum. Fringilla phasellus faucibus scelerisque eleifend. Sagittis eu volutpat
                         odio facilisis mauris.</p>
 
-                    <p><b>Turpis egestas integer</b> eget aliquet nibh praesent. Sed felis eget velit aliquet sagittis id consectetur purus ut. Sit amet purus gravida quis. Faucibus in ornare quam viverra orci sagittis eu volutpat. Consequat id porta nibh
+                    <p class="fount"><b>Turpis egestas integer</b> eget aliquet nibh praesent. Sed felis eget velit aliquet sagittis id consectetur purus ut. Sit amet purus gravida quis. Faucibus in ornare quam viverra orci sagittis eu volutpat. Consequat id porta nibh
                         venenatis cras sed. Quis commodo odio aenean sed adipiscing diam donec. Sed viverra tellus in hac habitasse platea. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Sed risus ultricies tristique nulla aliquet. Tempor
                         orci dapibus ultrices in iaculis. Facilisis magna etiam tempor orci eu. Enim sit amet venenatis urna cursus eget nunc. Elit sed vulputate mi sit. Dui ut ornare lectus sit amet est placerat in egestas. Faucibus pulvinar elementum
                         integer enim neque volutpat. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Laoreet sit amet cursus sit amet dictum sit amet justo. Nulla pharetra diam sit amet nisl suscipit adipiscing. Suscipit tellus mauris a
@@ -262,8 +263,8 @@
                 </div>
             </div>
         </div>
-        <div id="sidebar" class="col-2 w-auto">
-            <iframe src="http://wikipedia.com" height="1800" width="90%"></iframe>
+        <div id="sidebar" class="col-2 w-auto ">
+            <iframe src="http://wikipedia.com" height="1800"></iframe>
 
             <div class="padl">
                 <nav aria-label="page navigation example">
@@ -277,8 +278,11 @@
                 </nav>
             </div>
         </div>
-        <!-- </div> -->
     </div>
+
+    <!-- <div id="footer" style="background-color: aqua; height: 50px; display: flex;">
+
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
